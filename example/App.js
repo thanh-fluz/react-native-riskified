@@ -8,26 +8,26 @@
  * https://github.com/facebook/react-native
  */
 
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, ScrollView} from 'react-native';
 import ReactNativeRiskified from 'react-native-riskified';
 
 export default class App extends Component<{}> {
   state = {
     status: 'starting',
-    message: '--'
+    message: '--',
   };
   componentDidMount() {
-    ReactNativeRiskified.startBeacon('myshop.com', '11002--3002', true);
+    ReactNativeRiskified.startBeacon('myshop.com', '11002--3002', false);
   }
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.welcome}>☆ReactNativeRiskified example☆</Text>
         <Text style={styles.instructions}>STATUS: {this.state.status}</Text>
         <Text style={styles.welcome}>☆NATIVE CALLBACK MESSAGE☆</Text>
         <Text style={styles.instructions}>{this.state.message}</Text>
-      </View>
+      </ScrollView>
     );
   }
 }
