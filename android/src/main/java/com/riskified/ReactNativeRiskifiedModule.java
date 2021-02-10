@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.riskified;
 
 import android.app.Activity;
 import android.app.Application;
