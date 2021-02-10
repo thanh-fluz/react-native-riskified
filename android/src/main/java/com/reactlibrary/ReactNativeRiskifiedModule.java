@@ -96,12 +96,13 @@ public class ReactNativeRiskifiedModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void rCookie(final Callback callback) {
+  public void rCookie(final Callback successCallback, final Callback errorCallback) {
     try {
       String riskifiedDeviceID = RXBeacon.rCookie();
-      callback.invoke(riskifiedDeviceID);
+      successCallback.invoke(riskifiedDeviceID);
     } catch (Exception error) {
       error.printStackTrace();
+      errorCallback.invoke(error.getMessage());
     }
   }
 }

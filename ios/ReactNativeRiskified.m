@@ -12,8 +12,8 @@ RCT_EXPORT_METHOD(startBeacon
                   : (BOOL *)debugInfo) {
   if (!beaconState) {
     [RiskifiedBeacon startBeacon:shopName
-                    sessionToken:sessionToken
-                       debugInfo:debugInfo];
+                     sessionToken:sessionToken
+                     debugInfo:debugInfo];
     beaconState = TRUE;
   }
 }
@@ -22,4 +22,23 @@ RCT_EXPORT_METHOD(updateSessionToken : (NSString *)token) {
   [RiskifiedBeacon updateSessionToken:token];
 }
 
+RCT_EXPORT_METHOD(logRequest: (NSURL *)url) {
+  [RiskifiedBeacon logRequest:url];
+}
+
+RCT_EXPORT_METHOD(logSensitiveDeviceInfo) {
+  [RiskifiedBeacon logSensitiveDeviceInfo];
+}
+
+RCT_EXPORT_METHOD(rCookie 
+                         : (RCTResponseSenderBlock)successCallback
+            errorCallback: (RCTResponseSenderBlock)errorCallback) {
+  @try {
+    NSString *riskifiedDeviceID = [RiskifiedBeacon rCookie];
+    successCallback(@[riskifiedDeviceID]);
+  }
+  @catch ( NSException *e ) {
+    errorCallback(@[e]);
+  }
+}
 @end

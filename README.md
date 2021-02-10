@@ -9,8 +9,9 @@
 `$ react-native link react-native-riskified`
 
 ## Usage
+
 ```javascript
-import ReactNativeRiskified from 'react-native-riskified';
+import ReactNativeRiskified from "react-native-riskified"
 
 /**
  Entry point, should be called at the end of applicationDidFinishLaunching:
@@ -18,27 +19,30 @@ import ReactNativeRiskified from 'react-native-riskified';
  @param sessionID The initial session's unique identifier
  @param enableDebugging Controls debug logging to NSLog
  */
-ReactNativeRiskified.startBeacon(shopName: string, sessionID:string, enableDebugging: boolean); // => void
+ReactNativeRiskified.startBeacon((shopName: string), (sessionID: string), (enableDebugging: boolean)) // => void
 
 /**
  Updates that the user has begun a new browsing session
  @param sessionID The new session's unique identifier
  */
-ReactNativeRiskified.updateSessionToken(sessionID: string); // => void
+ReactNativeRiskified.updateSessionToken((sessionID: string)) // => void
 
 /**
  Manually log a request to a specific URL.
  @param requestURL The remote url that the host app sent a request to.
  */
-ReactNativeRiskified.logRequest(requestURL: string); // => void
+ReactNativeRiskified.logRequest((requestURL: string)) // => void
 
 /**
  Manually log sensitive Personally Identifiable Information (social account data).
  */
-ReactNativeRiskified.logSensitiveDeviceInfo(); // => void
+ReactNativeRiskified.logSensitiveDeviceInfo() // => void
 
 /**
    Get the unique Riskified Identifier.
  */
-const riskifiedDeviceID = ReactNativeRiskified.rCookie(); // => string
+const riskifiedDeviceID = ReactNativeRiskified.rCookie(
+  (successCallback: (riskifiedDeviceID: string) => string),
+  (errorCallback: (errorMsg: string) => string)
+) // => string
 ```
