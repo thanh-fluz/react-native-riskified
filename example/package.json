@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-riskified": "https://github.com/Exkalybur/react-native-riskified.git"
+    "react-native-riskified": "https://github.com/Exkalybur/react-native-riskified.git#develop"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

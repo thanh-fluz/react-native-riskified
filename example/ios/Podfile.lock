@@ -185,7 +185,7 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-riskified (1.0.0):
+  - react-native-riskified (1.0.1):
     - React
     - RiskifiedBeacon (~> 1.2.7)
   - React-RCTActionSheet (0.63.4):
@@ -360,7 +360,7 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-riskified: 234d0ea5bb9986cd7df56066f4676ac28a8d3b0b
+  react-native-riskified: cc13d4928a656bda9f7e8b83b77607fb728d0247
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
