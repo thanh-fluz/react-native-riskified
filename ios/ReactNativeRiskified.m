@@ -4,7 +4,7 @@
 
 RCT_EXPORT_MODULE()
 
-BOOL beaconState = FALSE;
+BOOL beaconState = NO;
 
 RCT_EXPORT_METHOD(startBeacon
                   : (NSString *)shopName sessionToken
@@ -14,7 +14,7 @@ RCT_EXPORT_METHOD(startBeacon
     [RiskifiedBeacon startBeacon:shopName
                      sessionToken:sessionToken
                      debugInfo:debugInfo];
-    beaconState = TRUE;
+    beaconState = YES;
   }
 }
 
