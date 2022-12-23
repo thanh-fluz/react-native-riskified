@@ -26,10 +26,6 @@ RCT_EXPORT_METHOD(logRequest: (NSURL *)url) {
   [RiskifiedBeacon logRequest:url];
 }
 
-RCT_EXPORT_METHOD(logSensitiveDeviceInfo) {
-  [RiskifiedBeacon logSensitiveDeviceInfo];
-}
-
 RCT_EXPORT_METHOD(rCookie 
                          : (RCTResponseSenderBlock)successCallback
             errorCallback: (RCTResponseSenderBlock)errorCallback) {

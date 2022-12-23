@@ -74,7 +74,7 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
     // https://mvnrepository.com/artifact/com.riskified/android-sdk
-    compile group: 'com.riskified', name: 'android-sdk', version: '1.3.5'
+    compile group: 'com.riskified', name: 'android-sdk', version: '1.5.1'
 }
 
 def configureReactNativePom(def pom) {

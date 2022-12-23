@@ -34,11 +34,6 @@ ReactNativeRiskified.updateSessionToken((sessionID: string)) // => void
 ReactNativeRiskified.logRequest((requestURL: string)) // => void
 
 /**
- Manually log sensitive Personally Identifiable Information (social account data).
- */
-ReactNativeRiskified.logSensitiveDeviceInfo() // => void
-
-/**
    Get the unique Riskified Identifier.
  */
 const riskifiedDeviceID = ReactNativeRiskified.rCookie(
