@@ -74,17 +74,6 @@ public class ReactNativeRiskifiedModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void logSensitiveDeviceInfo() {
-    try {
-      if (RXBeacon != null) {
-        RXBeacon.logSensitiveDeviceInfo();
-      }
-    } catch (Exception error) {
-      error.printStackTrace();
-    }
-  }
-
-  @ReactMethod
   public void removeLocationUpdates() {
     try {
       if (RXBeacon != null) {
