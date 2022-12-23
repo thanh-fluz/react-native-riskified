@@ -74,17 +74,6 @@ public class ReactNativeRiskifiedModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void removeLocationUpdates() {
-    try {
-      if (RXBeacon != null) {
-        RXBeacon.removeLocationUpdates();
-      }
-    } catch (Exception error) {
-      error.printStackTrace();
-    }
-  }
-
-  @ReactMethod
   public void rCookie(final Callback successCallback, final Callback errorCallback) {
     try {
       String riskifiedDeviceID = RXBeacon.rCookie();
