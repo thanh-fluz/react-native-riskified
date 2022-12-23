@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency 'RiskifiedBeacon', '~> 1.3.3'
+  s.dependency 'RiskifiedBeacon', '~> 1.2.7'
   # ...
   # s.dependency "..."
 end
