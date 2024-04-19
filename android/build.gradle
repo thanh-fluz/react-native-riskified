@@ -59,7 +59,8 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
     // https://mvnrepository.com/artifact/com.riskified/android-sdk
-    implementation 'com.riskified:android-sdk:1.5.+' 
+    implementation 'com.riskified:android-sdk:1.9.1:googleNoLocation@aar'
+
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 }
 
